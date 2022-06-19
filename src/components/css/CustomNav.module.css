@@ -1,0 +1,22 @@
+
+
+.parentDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2em;
+    align-items: center;
+}
+
+.btnSets {
+    border: none;
+    background-color: transparent;
+}
+
+.activeBtn {
+    background-color: #4C0871;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: .5em;
+}

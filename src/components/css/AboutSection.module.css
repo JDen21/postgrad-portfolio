@@ -1,0 +1,92 @@
+.mainDiv {
+    
+    border-top: 3px solid #4C0871;
+    border-bottom: 3px solid #4C0871;
+    margin:  3.5em auto;
+    width: 90%;
+    max-width: 600px;
+    padding: 3em 0;
+}
+
+.subDiv {
+    text-align: center;
+    font-size: 1.75rem;
+    
+}
+
+.setColor {
+    color: #4C0871;
+}
+
+.balloons {
+    background-color: red;
+    padding: 1.5em;
+    border-radius: 100%;
+    opacity: 0.5;
+    color: white;
+    position: absolute;
+}
+
+.js {
+    background-color: #FAF240;
+    color: black;
+    animation: js-animate 5s infinite;
+}
+
+.ts {
+    background-color: #4069FA;
+    left: 40%;
+    animation: ts-animate 5s infinite;
+}
+
+.jv {
+    left: 70%;
+    animation: jv-animate 5s infinite;
+}
+
+@keyframes js-animate {
+    25% {
+        transform: translate(50%, 100%);
+    }
+    50% {
+        transform: translate(-50%, 100%);
+    }
+    75% {
+        transform: translate(-50%, -100%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes ts-animate {
+    25% {
+        transform: translate(-50%, 150%);
+        
+    }
+    50% {
+        transform: translate(-50%, -150%);
+    }
+    75% {
+        transform: translate(50%, 150%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes jv-animate {
+    25% {
+        transform: translate(150%, 0%);
+        
+    }
+    50% {
+        transform: translate(150%, 150%);
+    }
+    75% {
+        transform: translate(-150%, 150%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}

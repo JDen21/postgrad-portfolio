@@ -1,0 +1,17 @@
+/* import fonts */
+
+:root{
+  --primary-color : #4C0871;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat  ','Roboto',-apple-system, BlinkMacSystemFont, 
+    sans-serif;
+  font-size: 16px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

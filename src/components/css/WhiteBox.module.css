@@ -1,0 +1,22 @@
+.main {
+    border: 3px solid #4C0871;
+    width: 40%;
+    max-width: 300px;
+    font-size: 1.5rem;
+    text-align: center;
+    height: 100px;
+}
+
+.main div {
+    padding: 3px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.solid {
+    background-color: #4C0871;
+    border: 3px solid white;
+    color: white;
+}
