@@ -1,0 +1,112 @@
+.parentStyle {
+    position: relative;
+    /* background-color: red; */
+}
+
+.mainChild {
+    height: calc(100vh*0.9);
+
+}
+
+.subChild {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.styleBox {
+    background-color: red;
+    width: calc(100vw*0.6);
+    height: calc(100vw*0.6);
+    max-width: 400px;
+    max-height: 400px;
+    position: absolute;
+}
+
+.blackBox {
+    background-color: #282828;
+    animation: blackMoveMobile 0.75s linear forwards;
+    animation-delay: 1.25s;
+}
+
+.purpleBox {
+    background-color: #4C0871;
+    animation: purpleMoveMobile 0.75s linear forwards;
+    animation-delay: 1.25s;
+}
+
+@keyframes blackMoveMobile {
+    50% {
+        transform: translate(-25%, 0%);
+    }
+    100% {
+        transform: translate(-25%, -25%);
+        box-shadow: -4px -4px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: -4px -4px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: -4px -4px 5px 0px rgba(0,0,0,0.75);
+    }
+}
+
+@keyframes purpleMoveMobile {
+    50% {
+        transform: translate(25%, 0%);
+    }
+    100% {
+        transform: translate(25%, 25%);
+        box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    }
+}
+
+.goldBox {
+    width: calc(100vw*0.6);
+    height: calc(100vw*0.6);
+    max-width: 400px;
+    max-height: 400px;
+
+    background-color: red;
+    background-color: transparent;
+    border: 5px solid #FAFF00;
+    
+    
+
+}
+
+
+
+.mobile {
+    width: 0%;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-20%, -20%);
+
+    animation: mobileMove 1.25s linear forwards;
+    animation-delay: 3s;
+}
+
+@keyframes mobileMove {
+    50% {
+        opacity: 0.5;
+        width: 50%;
+    }
+    100% {
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+.test {
+    position: absolute;
+    /* background-color: red;  */
+    border: 5px solid #FAFF00;
+    width: calc(100vw*0.6);
+    height: calc(100vw*0.6);
+    max-width: 400px;
+    max-height: 400px;
+    z-index: 1;
+
+}

@@ -1,3 +1,10 @@
+.sectionTitle {
+    margin: 3% 5%;
+    color: #4C0871;
+    font-size: 2rem;
+
+}
+
 .deck {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

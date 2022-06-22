@@ -7,6 +7,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Slide from '@mui/material/Slide';
 import CustomNavStyle from '../css/CustomNav.module.css'
+import { ButtonGroup, Button } from '@mui/material';
 
 function HideOnScroll(props) {
     const {children, window} = props;
@@ -49,9 +50,13 @@ export default function HideAppBar(props) {
                                 </Typography>
                             </div>
                             <div>
-                                <button className={`${CustomNavStyle.btnSets} ${ CustomNavStyle.activeBtn}`} >Home</button>
-                                <button className={CustomNavStyle.btnSets} >Work</button>
-                                <button className={CustomNavStyle.btnSets} >About</button>
+                            {/* check routing */}
+                            <ButtonGroup size='smalll' color='secondary' variant="text" aria-label="text button group">
+                                <Button size='small' variant='contained' color='secondary' >Home</Button>
+                                <Button size='small' >About</Button>
+                                <Button size='small' >works</Button>
+                            </ButtonGroup>
+                            
                             </div>
                         </div>
 

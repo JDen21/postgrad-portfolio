@@ -1,0 +1,12 @@
+.body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.title {
+    margin: 3% 5%;
+    color: #4C0871;
+    font-size: 2rem;
+
+}

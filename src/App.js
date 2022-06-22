@@ -6,6 +6,7 @@ import PageLoad from './components/js/PageLoad'
 import theme from './theme'
 
 const LandingPage = lazy(() => import ('./pages/LandingPage'))
+const PamsPage = lazy(()=> import ('./pages/PamsPage'))
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                         </Routes>
                         <Routes>
                             <Route path='/' element={< LandingPage />}/>
+                            <Route path='/pams' element={< PamsPage />} />
                         </Routes>
                     </Suspense>
                 </Router>
