@@ -21,7 +21,7 @@ export default function PamsDescription() {
                             aim is to be a working system that can detect accidents and notify responders
                             through the software. 
                         </div>
-                    </div>
+                    </div> 
 
                     <img src={amd} className={PD.imageStyles} alt='device amd'/>
                     <img src={ams} className={PD.imageStyles} alt='ams dummy'/>

@@ -7,6 +7,7 @@ import theme from './theme'
 
 const LandingPage = lazy(() => import ('./pages/LandingPage'))
 const PamsPage = lazy(()=> import ('./pages/PamsPage'))
+const ComsPage = lazy(()=>import('./pages/ComsPage'))
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                         <Routes>
                             <Route path='/' element={< LandingPage />}/>
                             <Route path='/pams' element={< PamsPage />} />
+                            <Route path='/coms' element={<ComsPage />} />
                         </Routes>
                     </Suspense>
                 </Router>

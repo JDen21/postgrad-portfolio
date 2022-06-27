@@ -1,0 +1,15 @@
+.parent {
+    padding: 3% 7%;
+    margin: 3% 0;
+    background-color: #4C0871;
+    color: white;
+}
+
+.title {
+    font-size: 2rem;
+    padding: 1% 0;
+}
+
+.body {
+    max-width: 600px;
+}

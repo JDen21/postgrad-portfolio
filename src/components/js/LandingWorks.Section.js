@@ -7,8 +7,12 @@ import {useNavigate} from 'react-router-dom'
 export default function WorkSection() {
     
     const navigate = useNavigate()
-    const pushToAMS = ()=>{
+    const pushToAMS = ()=>{ 
         navigate('/pams')
+    }
+
+    const pushToCOMS = ()=>{
+        navigate('/coms')
     }
 
     return (
@@ -18,7 +22,7 @@ export default function WorkSection() {
                 <div className={WS.card} onClick={pushToAMS} >
                     <img className={WS.amsImage} src={ams} alt='ams here'/>
                 </div>
-                <div className={`${WS.card} ${WS.cardRed}`}>
+                <div className={`${WS.card} ${WS.cardRed}`} onClick={pushToCOMS} >
                     <img className={WS.csuImage} src={csu} alt='csu logo'/>
                     <div>CSU Canteen Ordering System</div>
                 </div>

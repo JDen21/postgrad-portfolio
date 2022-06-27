@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
@@ -37,6 +37,20 @@ HideOnScroll.propTypes = {
 };
 
 export default function HideAppBar(props) {
+    const [clr, changeClr] = useState(0);
+
+    const homeClick = () => {
+        changeClr(0)
+    }
+
+    const aboutClick = () => {
+        changeClr(1)
+    }
+
+    const worksClick = () => {
+        changeClr(2)
+    }
+
     return (
         <React.Fragment>
             <CssBaseline/>
@@ -52,9 +66,9 @@ export default function HideAppBar(props) {
                             <div>
                             {/* check routing */}
                             <ButtonGroup size='smalll' color='secondary' variant="text" aria-label="text button group">
-                                <Button size='small' variant='contained' color='secondary' >Home</Button>
-                                <Button size='small' >About</Button>
-                                <Button size='small' >works</Button>
+                                <Button size='small' variant={clr === 0 ? 'contained' : 'text'} onClick={homeClick} color='secondary' >Home</Button>
+                                <Button size='small' variant={clr === 1 ? 'contained' : 'text'} onClick={aboutClick} >About</Button>
+                                <Button size='small' variant={clr === 2 ? 'contained' : 'text'} onClick={worksClick} >works</Button>
                             </ButtonGroup>
                             
                             </div>
