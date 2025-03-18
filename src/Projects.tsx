@@ -9,12 +9,8 @@ export default function Projects() {
 
   return (
     <section
-      style={{
-        width: "100%",
-        height: "80vh",
-        position: "relative",
-        backgroundColor: "#fffafa",
-      }}
+      className={styles['container']}
+      style={{ backgroundColor: "#fffafa" }}
     >
       <p
         style={{
@@ -169,7 +165,7 @@ function ProjectCard(props: {
       <h2 style={{ color: "black", textAlign: "center" }}>Hover on it</h2>
       <div
         className={styles["card"]}
-        style={{ marginLeft: "auto", marginRight: "auto" }}
+        style={{ marginLeft: "auto", marginRight: "auto", minWidth: '370px' }}
       >
         {frontImg || (
           <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
