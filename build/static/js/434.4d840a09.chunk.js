@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkpostgrad_portfolio=self.webpackChunkpostgrad_portfolio||[]).push([[434],{4434:function(e,i,o){o.r(i),o.d(i,{default:function(){return r}});o(2791);var s="WhiteBox_main__Fk28C",t="WhiteBox_solid__mjI6I",n=o(184);function r(e){return(0,n.jsx)("div",{className:s,children:(0,n.jsx)("div",{className:e.solid?t:"",children:e.value})})}}}]);
-//# sourceMappingURL=434.4d840a09.chunk.js.map
