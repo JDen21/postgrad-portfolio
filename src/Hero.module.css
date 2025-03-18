@@ -126,10 +126,11 @@
     }
 }
 
-@media screen and (max-width: 375px) {
-  .hero-content {
-    padding-top: 12%;
+.hero-content  {
+      padding-top: 12%;
   }
+
+@media screen and (max-width: 375px) {
   .hero-content .hero-text {
       font-size: 1rem;
   }
