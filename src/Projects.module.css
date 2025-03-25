@@ -65,7 +65,7 @@
     width: 100%;
     height: 80vh;
     position: relative;
-    backgroundColor: #fffafa;
+    background-color: #fffafa;
 }
 @media screen and (max-width: 375px) {
     .container {
