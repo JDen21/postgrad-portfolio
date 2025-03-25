@@ -5,7 +5,6 @@ export default function Hero() {
   return (
     <section
       style={{
-        // width: "100%",
         minHeight: "100vh",
         position: "relative"
       }}
@@ -59,13 +58,13 @@ export default function Hero() {
             <a href="https://www.kooapps.com" target="_blank">
               Kooapps
             </a>
-            .
+            .(work in progress)
           </p>
         </div>
         <div>
           <div className={style["card"]}>
             <div className={style["card2"]}>
-              <img src={avatar} />
+              <img src={avatar} style={{ width: '100%', borderRadius: '50%' }} />
             </div>
           </div>
         </div>

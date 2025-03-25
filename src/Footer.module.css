@@ -80,3 +80,9 @@
 .instagram:hover svg {
   fill: #c13584;
 }
+
+@media screen and (max-width: 450px) {
+    .container {
+        margin-top: 25%;
+    }
+}

@@ -13,6 +13,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "link-preview-js": "^3.0.14",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
