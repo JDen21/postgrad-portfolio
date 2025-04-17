@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.top-name {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.what-i-do {
+    position: relative;
+}
+
+.what-i-do>div {
+    width: 40%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.what-i-do p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 3rem;
+    color: white;
+}
+
+.footer p {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.footer>div:nth-child(2)>p:nth-child(1) {
+    margin-top: 12%;
+}
+
+.footer>input {
+    margin-top: 1%;
+    min-width: 220px;
+}
+
+.footer>nav:nth-child(4) {
+    margin-top: 2%;
+    display: flex;
+    column-gap: 12px;
+}
+
+.footer>nav>a {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    font-family: "Montserrat", sans-serif;
+}
