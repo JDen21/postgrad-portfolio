@@ -1,4 +1,4 @@
-import avatar from "./avatarMe.png";
+import avatar from "./assets/avatar_me.png";
 import style from "./Hero.module.css";
 
 export default function Hero() {
