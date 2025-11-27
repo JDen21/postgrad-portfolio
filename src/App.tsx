@@ -1,6 +1,7 @@
 import "./App.css";
 import heroPhoto from './assets/hero_layer.png';
-import icon2 from './assets/icon2.png';
+import amsPhoto from './assets/AMS-min.png';
+import logo from './assets/icon2.png';
 
 function App() {
   return (
@@ -116,9 +117,10 @@ function BoredomBoard () {
           position: 'relative'
       }}
     >
-      <div style={{ position: 'absolute', minWidth: '50px', minHeight: '50px', left: '20%',  backgroundColor: 'red', display: 'inline-flex' }} ></div>
-      
-      <div style={{ position: 'absolute', minWidth: '50px', minHeight: '50px', left: '80%',  backgroundColor: 'red', display: 'inline-flex' }} ></div>
+      <div style={{ aspectRatio: '1/1', width: '20%', position: 'absolute', minWidth: '50px', minHeight: '50px', left: '20%', top: '10%',  backgroundColor: '#030303', display: 'inline-flex' }} ></div>
+      <div style={{ aspectRatio: '1/1', width: '10%', position: 'absolute', minWidth: '50px', minHeight: '50px', left: '70%', top: '10%',  backgroundColor: '#18CAD6', display: 'inline-flex' }} ></div>
+      <div style={{ aspectRatio: '1/1', width: '20%', position: 'absolute', minWidth: '50px', minHeight: '50px', left: '60%', top: '50%',  backgroundColor: '#030303', display: 'inline-flex' }} ></div>
+      <div style={{ aspectRatio: '1/1', width: '10%', position: 'absolute', minWidth: '50px', minHeight: '50px', left: '20%', top: '70%',  backgroundColor: '#1842D6', display: 'inline-flex' }} ></div>
       <section
         style={{
           background: 'rgba(3,3,3,0.5)',
@@ -127,7 +129,37 @@ function BoredomBoard () {
           position: 'absolute'
         }}
       >
-        something here
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            columnGap: '1%',
+            marginTop: '1%',
+            marginLeft: '2%'
+          }}
+        >
+          <img src={logo} style={{ width: '100px' }} />
+          <p style={{ fontFamily: 'Montserrat', fontSize: '1.25rem' }}>Carousel of Boredom</p>
+        </div>
+        <div 
+          style={{
+            position: 'absolute',
+            left: '50%',
+            top: '50%',
+            transform: 'translate(-50%, -50%)',
+            minHeight: '350px',
+            width: '50%',
+            aspectRatio: '1.5/1',
+            backgroundColor: 'white',
+            color: 'black',
+            padding: '1%',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center'
+          }} 
+        >
+          <img src={amsPhoto} />
+        </div>
       </section>
     </section>
   );
