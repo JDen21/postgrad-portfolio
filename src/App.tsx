@@ -83,7 +83,7 @@ function WhatIDo() {
   return (
     <section
       style={{
-        height: '100vh',
+        height: '110vh',
         backgroundColor: '#030303',
         position: 'relative',
         fontSize: '250%',
@@ -112,55 +112,21 @@ function BoredomBoard () {
   return (
     <section
       style={{
-          height: '100vh',
+          height: '110vh',
           backgroundColor: 'white',
           position: 'relative'
       }}
     >
-      <div style={{ aspectRatio: '1/1', width: '20%', position: 'absolute', minWidth: '50px', minHeight: '50px', left: '20%', top: '10%',  backgroundColor: '#030303', display: 'inline-flex' }} ></div>
-      <div style={{ aspectRatio: '1/1', width: '10%', position: 'absolute', minWidth: '50px', minHeight: '50px', left: '70%', top: '10%',  backgroundColor: '#18CAD6', display: 'inline-flex' }} ></div>
-      <div style={{ aspectRatio: '1/1', width: '20%', position: 'absolute', minWidth: '50px', minHeight: '50px', left: '60%', top: '50%',  backgroundColor: '#030303', display: 'inline-flex' }} ></div>
-      <div style={{ aspectRatio: '1/1', width: '10%', position: 'absolute', minWidth: '50px', minHeight: '50px', left: '20%', top: '70%',  backgroundColor: '#1842D6', display: 'inline-flex' }} ></div>
-      <section
-        style={{
-          background: 'rgba(3,3,3,0.5)',
-          height: '100%',
-          width: '100%',
-          position: 'absolute'
-        }}
-      >
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            columnGap: '1%',
-            marginTop: '1%',
-            marginLeft: '2%'
-          }}
-        >
-          <img src={logo} style={{ width: '100px' }} />
-          <p style={{ fontFamily: 'Montserrat', fontSize: '1.25rem' }}>Carousel of Boredom</p>
-        </div>
-        <div 
-          style={{
-            position: 'absolute',
-            left: '50%',
-            top: '50%',
-            transform: 'translate(-50%, -50%)',
-            minHeight: '350px',
-            width: '50%',
-            aspectRatio: '1.5/1',
-            backgroundColor: 'white',
-            color: 'black',
-            padding: '1%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'
-          }} 
-        >
-          <img src={amsPhoto} />
-        </div>
-      </section>
+    <div className="container"></div>
+    <section style={{ width: '100%', position: 'absolute', top: 0, left: 0, zIndex: 9999 }}>
+      <div style={{ marginBottom: '10%', paddingTop: '1%', paddingLeft: '2%', display: 'flex', alignItems: 'center', width: '250px' }}>
+        <img src={logo} style={{ width: '30%' }} />
+        <p style={{ fontSize: '1.25rem', paddingLeft: '5%' }}> Boredom Board </p>
+      </div>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <img src={amsPhoto} style={{ backgroundColor: 'white', borderRadius: '5px' }} />
+      </div>
+    </section>
     </section>
   );
 }
